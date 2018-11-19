@@ -1,0 +1,845 @@
+/* line 1, E:/mary/projects/lynnbrook-group/scss/_base.scss */
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* line 6, E:/mary/projects/lynnbrook-group/scss/_base.scss */
+.btn {
+  min-width: 220px;
+  padding: 19px 24px 18px 24px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  margin: 15px 10px 20px 10px;
+}
+
+/* line 17, E:/mary/projects/lynnbrook-group/scss/_base.scss */
+.btn.active {
+  background-image: linear-gradient(to right, #6ca3db, #5995d1, #4588c7, #2d7abe, #016db4);
+  border: none;
+}
+
+/* line 1, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr {
+  background-color: rgba(37, 37, 37, 0.8);
+  position: fixed;
+  z-index: 500;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+/* line 11, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_wrap {
+  padding: 0 30px 0 30px;
+  position: relative;
+}
+
+/* line 15, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr .set-height {
+  height: 120px;
+}
+
+/* line 18, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_hamburger {
+  display: none;
+}
+
+/* line 21, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 120px;
+}
+
+/* line 28, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_nav_item {
+  padding: 0 30px;
+  position: relative;
+}
+
+/* line 32, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_nav_item.active a {
+  position: relative;
+  color: #6695c5;
+}
+
+/* line 36, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_nav_item.active a:before {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: -49px;
+  height: 3px;
+  width: 100%;
+  background: #006cb3;
+}
+
+/* line 52, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_nav_item:not(:last-child):after {
+  content: '';
+  display: block;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+  height: 10px;
+  width: 1px;
+  background: #626566;
+}
+
+/* line 67, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_nav_item a {
+  color: #ffffff;
+  text-transform: uppercase;
+  font-size: 14px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+}
+
+/* line 78, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-number {
+  font-size: 32px;
+  color: #ffffff;
+}
+
+/* line 99, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item {
+  height: 30px;
+  width: 30px;
+  border: 1px solid #727a8e;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+}
+
+/* line 106, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+/* line 109, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item:after {
+  content: '';
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 123, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item.icon-social-fb:after {
+  background-image: url("../image/icon-social-fb.png");
+}
+
+/* line 128, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item.icon-social-twitter:after {
+  background-image: url("../image/icon-social-twitter.png");
+}
+
+/* line 133, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item.icon-social-google:after {
+  background-image: url("../image/icon-social-google.png");
+}
+
+/* line 138, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item.icon-social-mail:after {
+  background-image: url("../image/icon-social-mail.png");
+}
+
+/* line 143, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+.hdr_contact-item:hover {
+  cursor: pointer;
+  background-image: linear-gradient(to right, #6ca3db, #5995d1, #4588c7, #2d7abe, #016db4);
+}
+
+@media (min-width: 1401px) {
+  /* line 151, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_wrap {
+    padding-left: 0;
+  }
+  /* line 155, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo-img-2 {
+    display: none;
+  }
+  /* line 158, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo img {
+    margin-bottom: -12px;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 1400px) {
+  /* line 166, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo {
+    width: 200px;
+  }
+  /* line 168, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo-img-1 {
+    display: none;
+  }
+  /* line 171, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo-img-2 {
+    display: block;
+  }
+  /* line 174, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo img {
+    max-width: 100%;
+  }
+  /* line 179, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_contact-number {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 186, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav_item {
+    padding: 0 15px;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1160px) {
+  /* line 192, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav_item {
+    padding: 0 15px;
+  }
+  /* line 194, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav_item:nth-last-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 991px) {
+  /* line 201, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr .set-height {
+    height: 70px;
+  }
+  /* line 204, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_logo {
+    width: 150px;
+  }
+  /* line 207, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav {
+    display: none;
+    position: absolute;
+    z-index: 520;
+    right: 0;
+    top: 74px;
+    min-width: 200px;
+    padding: 10px 0;
+    background-color: rgba(37, 37, 37, 0.8);
+  }
+  /* line 216, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav_item {
+    padding: 6px 15px;
+  }
+  /* line 218, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav_item:after {
+    content: none !important;
+  }
+  /* line 222, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav_item a:before {
+    content: none !important;
+  }
+  /* line 228, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_nav ul {
+    height: auto;
+    flex-direction: column;
+  }
+  /* line 234, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_contact {
+    display: none;
+  }
+  /* line 236, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_contact-number {
+    margin-bottom: 0;
+  }
+  /* line 241, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_contact-item {
+    display: none;
+  }
+  /* line 246, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger {
+    width: 50px;
+    height: 50px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    cursor: pointer;
+  }
+  /* line 255, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger i {
+    position: relative;
+    width: 100%;
+  }
+  /* line 258, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger i:after, .hdr_hamburger i:before {
+    content: '';
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    right: 0;
+  }
+  /* line 266, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger i, .hdr_hamburger i:after, .hdr_hamburger i:before {
+    display: block;
+    height: 3px;
+    background: white;
+  }
+  /* line 271, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger i:before {
+    top: -10px;
+  }
+  /* line 274, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger i:after {
+    bottom: -10px;
+  }
+  /* line 281, E:/mary/projects/lynnbrook-group/scss/_header.scss */
+  .hdr_hamburger:hover + .hdr_nav {
+    display: block;
+  }
+}
+
+/* line 1, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+.fsc {
+  background-image: url("../image/first-screen-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 285px 0 100px 0;
+  min-height: 950px;
+}
+
+/* line 8, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+.fsc_title {
+  color: #ffffff;
+  font-size: 60px;
+  font-weight: lighter;
+  text-align: center;
+  margin-bottom: 18px;
+}
+
+/* line 16, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+.fsc_item {
+  height: 130px;
+  width: 130px;
+  border: 1px solid #ffffff;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center 20px;
+  margin: 0 20px 60px 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+
+/* line 30, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+.fsc_item span {
+  color: white;
+  font-size: 10px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+/* line 40, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+.fsc_bottom-text {
+  color: #a3b2d4;
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+/* line 44, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+.fsc_bottom-text a {
+  color: #a3b2d4;
+  text-decoration: underline;
+}
+
+@media (max-width: 1400px) {
+  /* line 1, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc {
+    padding: 180px 0 100px 0;
+    min-height: auto;
+  }
+}
+
+@media (max-width: 1200px) {
+  /* line 57, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc_title {
+    font-size: 40px;
+  }
+  /* line 60, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc_item {
+    height: 100px;
+    width: 100px;
+    margin: 0 15px 40px 15px;
+    background-size: 40px;
+    background-position: center 20px;
+    padding-bottom: 15px;
+  }
+}
+
+@media (max-width: 600px) {
+  /* line 1, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc {
+    padding-bottom: 50px;
+  }
+  /* line 72, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc_title {
+    font-size: 30px;
+  }
+  /* line 75, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc_item-wrapper {
+    flex-wrap: wrap;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+  /* line 80, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc_item {
+    margin: 0 10px 20px 10px;
+  }
+  /* line 83, E:/mary/projects/lynnbrook-group/scss/_first-screen.scss */
+  .fsc .btn {
+    min-width: 100%;
+  }
+}
+
+/* line 1, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt {
+  background-color: #ffffff;
+  padding-top: 50px;
+}
+
+/* line 5, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_title {
+  padding: 10px 0 10px 30px;
+  border-left: 3px solid #006cb3;
+  margin-bottom: 15px;
+}
+
+/* line 10, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_title h4 {
+  color: #58709d;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-bottom: 6px;
+}
+
+/* line 17, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_title h2 {
+  color: #000000;
+  font-size: 34px;
+  text-transform: capitalize;
+}
+
+/* line 24, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt hr {
+  margin-bottom: 40px;
+}
+
+/* line 28, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt .styled-list {
+  list-style: none;
+  margin-bottom: 86px;
+}
+
+/* line 32, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt .styled-list li {
+  position: relative;
+  font-size: 18px;
+  color: #000000;
+  margin-bottom: 28px;
+}
+
+/* line 38, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt .styled-list li:before {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  bottom: 0;
+  left: -40px;
+  margin: auto;
+  height: 21px;
+  width: 21px;
+  background-image: url("../image/icon-list-marker.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 55, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_contact {
+  background-color: #f2f5fa;
+  text-align: center;
+  margin-top: -150px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 40px;
+}
+
+/* line 63, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_contact-title {
+  font-size: 32px;
+  color: #ffffff;
+  background-image: linear-gradient(to right, #6ca3db, #5995d1, #4588c7, #2d7abe, #016db4);
+  padding: 26px 60px;
+}
+
+/* line 70, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_contact-body {
+  padding: 60px;
+}
+
+/* line 73, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_contact input {
+  width: 100%;
+  background-color: #e6ebf3;
+  text-align: center;
+  color: #58709d;
+  font-size: 12px;
+  margin-bottom: 15px;
+  border-radius: 15px;
+  padding: 21px 15px;
+  border: none;
+  font-style: italic;
+  outline: none !important;
+}
+
+/* line 87, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_contact textarea {
+  text-align: center;
+  color: #58709d;
+  font-size: 12px;
+  margin-bottom: 6px;
+  width: 100%;
+  height: 150px;
+  background-color: #e6ebf3;
+  border-radius: 15px;
+  border: none;
+  padding: 20px 15px;
+  font-style: italic;
+  resize: none;
+  outline: none !important;
+}
+
+/* line 102, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+.abt_contact .btn {
+  background-color: #006db4;
+  margin-bottom: 0;
+}
+
+@media (max-width: 1239px) {
+  /* line 109, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+  .abt_contact {
+    margin-top: 0 !important;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 116, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+  .abt_contact-body {
+    padding: 30px 20px;
+  }
+  /* line 119, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+  .abt_contact-title {
+    padding: 20px;
+  }
+  /* line 123, E:/mary/projects/lynnbrook-group/scss/_about.scss */
+  .abt .mobile-no-indent {
+    margin-bottom: 0;
+  }
+}
+
+/* line 1, E:/mary/projects/lynnbrook-group/scss/_partners.scss */
+.partners {
+  height: 126px;
+  background-color: #f2f5fa;
+  padding: 20px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, E:/mary/projects/lynnbrook-group/scss/_partners.scss */
+.partners_item {
+  width: 370px;
+  text-align: center;
+  padding: 0 20px;
+}
+
+/* line 14, E:/mary/projects/lynnbrook-group/scss/_partners.scss */
+.partners_item img {
+  max-width: 100%;
+  transition: all 200ms;
+}
+
+/* line 19, E:/mary/projects/lynnbrook-group/scss/_partners.scss */
+.partners_item a:hover {
+  cursor: pointer;
+}
+
+/* line 21, E:/mary/projects/lynnbrook-group/scss/_partners.scss */
+.partners_item a:hover img {
+  -webkit-filter: grayscale(0.4);
+  filter: grayscale(0.4);
+}
+
+@media (max-width: 575px) {
+  /* line 1, E:/mary/projects/lynnbrook-group/scss/_partners.scss */
+  .partners {
+    display: none;
+  }
+}
+
+/* line 1, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl {
+  background-image: url("../image/testimonial-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 116px 0;
+}
+
+/* line 9, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl_pretitle {
+  color: #b3c4e5;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 5px;
+}
+
+/* line 17, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl_title {
+  color: #ffffff;
+  font-size: 40px;
+  line-height: 1;
+  text-transform: capitalize;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+/* line 26, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl hr {
+  border: none;
+  height: 3px;
+  width: 73px;
+  background-image: url("../image/line.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  margin-bottom: 60px;
+}
+
+/* line 38, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_captions {
+  margin-bottom: 100px;
+}
+
+/* line 41, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_caption {
+  height: 140px;
+  width: 140px;
+  border-radius: 50%;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  margin: 0 30px;
+  cursor: pointer;
+}
+
+/* line 51, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_caption.current {
+  box-shadow: inset 0 0 0 3px #00b3d6;
+}
+
+/* line 59, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel {
+  display: none;
+}
+
+/* line 61, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel.current {
+  display: block;
+}
+
+/* line 65, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content {
+  background-color: #ffffff;
+  border-radius: 10px;
+  min-height: 420px;
+}
+
+/* line 70, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_left {
+  width: 55%;
+  min-height: 420px;
+  padding: 45px 40px 58px 58px;
+}
+
+/* line 75, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_left-title {
+  font-size: 32px;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+/* line 82, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_left-posttitle {
+  font-size: 12px;
+  font-weight: bolder;
+  color: #006db4;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+}
+
+/* line 90, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_left_response {
+  font-size: 14px;
+  font-weight: 300;
+  color: #58709d;
+  line-height: 2;
+}
+
+/* line 98, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_right {
+  width: 45%;
+}
+
+/* line 101, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_right .slider {
+  margin-top: -40px;
+  margin-right: -40px;
+  box-shadow: -8px 6px 13px 0px #e3f4f5;
+  background-color: #8e8e8e;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* line 109, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_right .slider > img {
+  max-width: 100%;
+}
+
+/* line 114, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_right .swiper-button-next,
+.tsl .tabs_panel_content_right .swiper-button-prev {
+  width: 80px;
+  height: 80px;
+  background-color: white;
+  border-radius: 50%;
+  outline: none;
+  margin-top: -40px;
+  box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* line 125, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_right .swiper-button-next {
+  background-image: url("../image/icon-arrow-rightt.png");
+  background-size: auto;
+  right: -40px;
+  background-position: 22px center;
+}
+
+/* line 131, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+.tsl .tabs_panel_content_right .swiper-button-prev {
+  background-image: url("../image/icon-arrow-left.png");
+  background-size: auto;
+  left: -40px;
+  background-position: 45px center;
+}
+
+@media (max-width: 1300px) {
+  /* line 145, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content {
+    flex-wrap: wrap;
+  }
+  /* line 147, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content_right, .tsl .tabs_panel_content_left {
+    width: 100%;
+  }
+  /* line 152, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content_right .slider {
+    box-shadow: none;
+    margin: 0;
+  }
+  /* line 156, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content_right .slider .swiper-slide img {
+    width: 100%;
+  }
+  /* line 162, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content_left {
+    min-height: 0;
+  }
+  /* line 166, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_caption {
+    margin: 0 20px;
+  }
+  /* line 168, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_caption:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* line 175, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_caption {
+    height: 120px;
+    width: 120px;
+  }
+  /* line 178, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_caption:nth-last-child(2) {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  /* line 1, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl {
+    padding: 80px 0;
+  }
+  /* line 186, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_captions {
+    flex-wrap: wrap;
+  }
+  /* line 189, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_caption {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 575px) {
+  /* line 196, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content_left {
+    padding: 30px 20px 40px 20px;
+  }
+  /* line 199, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_panel_content_left-title {
+    font-size: 24px;
+  }
+  /* line 203, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_captions {
+    margin-bottom: 30px;
+  }
+  /* line 206, E:/mary/projects/lynnbrook-group/scss/_testimonials.scss */
+  .tsl .tabs_caption {
+    margin: 10px 10px;
+  }
+}
+
+/*# sourceMappingURL=../css/index.map */
