@@ -1,0 +1,128 @@
+.abt { //about
+  background-color: #ffffff;
+  padding-top: 50px;
+
+  &_title {
+    padding: 10px 0 10px 30px;
+    border-left: 3px solid $active-bg;
+    margin-bottom: 15px;
+
+    h4 {
+      color: #58709d;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-bottom: 6px;
+    }
+
+    h2 {
+      color: #000000;
+      font-size: 34px;
+      text-transform: capitalize;
+    }
+  }
+
+  hr {
+    margin-bottom: 40px;
+  }
+
+  .styled-list {
+    list-style: none;
+    margin-bottom: 86px;
+
+    li {
+      position: relative;
+      font-size: 18px;
+      color: #000000;
+      margin-bottom: 28px;
+
+      &:before {
+        content: "";
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        bottom: 0;
+        left: -40px;
+        margin: auto;
+        height: 21px;
+        width: 21px;
+        background-image: url('../image/icon-list-marker.png');
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+  }
+
+  &_contact {
+    background-color: #f2f5fa;
+    text-align: center;
+    margin-top: -150px;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 40px;
+
+    &-title {
+      font-size: 32px;
+      color: #ffffff;
+      background-image: linear-gradient(to right, #6ca3db, #5995d1, #4588c7, #2d7abe, #016db4);
+      padding: 26px 60px;
+    }
+
+    &-body {
+      padding: 60px;
+    }
+    input {
+      width: 100%;
+      background-color: #e6ebf3;
+      text-align: center;
+      color: #58709d;
+      font-size: 12px;
+      margin-bottom: 15px;
+      border-radius: 15px;
+      padding: 21px 15px;
+      border: none;
+      font-style: italic;
+      outline: none!important;
+    }
+
+    textarea {
+      text-align: center;
+      color: #58709d;
+      font-size: 12px;
+      margin-bottom: 6px;
+      width: 100%;
+      height: 150px;
+      background-color: #e6ebf3;
+      border-radius: 15px;
+      border: none;
+      padding: 20px 15px;
+      font-style: italic;
+      resize: none;
+      outline: none!important;
+    }
+    .btn {
+      background-color: #006db4;
+      margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 1239px) {
+    &_contact {
+      margin-top: 0!important;
+    }
+  }
+
+  @media (max-width: 575px) {
+    &_contact {
+      &-body {
+        padding: 30px 20px;
+      }
+      &-title {
+        padding: 20px;
+      }
+    }
+    .mobile-no-indent {
+      margin-bottom: 0;
+    }
+  }
+
+}

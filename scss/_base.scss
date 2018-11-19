@@ -1,0 +1,21 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.btn { //button
+  min-width: 220px;
+  padding: 19px 24px 18px 24px;
+  font-size: 14px;
+  font-weight: bolder;
+  color: #ffffff;
+  text-transform: uppercase;
+  text-align: center;
+  border: 1px solid #ffffff;
+  border-radius: 50px;
+  margin: 15px 10px 20px 10px;
+  &.active {
+    background-image: linear-gradient(to right, #6ca3db, #5995d1, #4588c7, #2d7abe, #016db4);
+    border: none;
+  }
+}

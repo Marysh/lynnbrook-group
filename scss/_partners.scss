@@ -1,0 +1,32 @@
+.partners {
+  height: 126px;
+  background-color: #f2f5fa;
+  padding: 20px 0;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &_item {
+    width: 370px;
+    text-align: center;
+    padding: 0 20px;
+    img {
+      max-width: 100%;
+      transition: all 200ms;
+    }
+    a {
+      &:hover {
+        cursor: pointer;
+        img {
+          -webkit-filter: grayscale(0.4);
+          filter: grayscale(0.4);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 575px) {
+    display: none;
+  }
+}

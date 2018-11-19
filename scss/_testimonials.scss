@@ -1,0 +1,208 @@
+.tsl { //testimonials
+
+  background-image: url("../image/testimonial-bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding: 116px 0;
+
+  &_pretitle {
+    color: #b3c4e5;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 5px;
+  }
+
+  &_title {
+    color: #ffffff;
+    font-size: 40px;
+    line-height: 1;
+    text-transform: capitalize;
+    margin-bottom: 24px;
+    text-align: center;
+  }
+
+  hr {
+    border: none;
+    height: 3px;
+    width: 73px;
+    background-image: url("../image/line.png");
+    background-repeat: no-repeat;
+    background-position: center 0;
+    margin-bottom: 60px;
+
+  }
+  .tabs {
+
+    &_captions {
+      margin-bottom: 100px;
+    }
+    &_caption {
+      height: 140px;
+      width: 140px;
+      border-radius: 50%;
+      background-size: cover;
+      overflow: hidden;
+      position: relative;
+      margin: 0 30px;
+
+      &.current {
+        box-shadow: inset 0 0 0 3px rgba(0, 179, 214, 1);
+        //box-shadow: inset 0 0 0 3px linear-gradient(to bottom, #009ad6 0%,#00c9d6 100%);
+
+
+      }
+    }
+
+    &_panel {
+      display: none;
+      &.current {
+        display: block;
+      }
+
+      &_content {
+        background-color: #ffffff;
+        border-radius: 10px;
+        min-height: 420px;
+
+        &_left {
+          width: 55%;
+          min-height: 420px;
+          padding: 45px 40px 58px 58px;
+
+          &-title {
+            font-size: 32px;
+            color: #000000;
+            text-transform: capitalize;
+
+          }
+
+          &-posttitle {
+            font-size: 12px;
+            font-weight: bolder;
+            color: #006db4;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+          }
+
+          &_response {
+            font-size: 14px;
+            font-weight: 300;
+            color: #58709d;
+            line-height: 2;
+          }
+        }
+
+        &_right {
+          width: 45%;
+
+          .slider {
+            margin-top: -40px;
+            margin-right: -40px;
+            box-shadow: -8px 6px 13px 0px rgba(227, 244, 245, 1);
+            background-color: #8e8e8e;
+            border-radius: 10px;
+            overflow: hidden;
+          }
+          //margin-right: -40px;
+          .swiper-button-next,
+          .swiper-button-prev {
+            width: 80px;
+            height: 80px;
+            background-color: white;
+            border-radius: 50%;
+            outline: none;
+            margin-top: -40px;
+            box-shadow: inset 0px 0px 10px 3px rgba(0, 0, 0, 0.3);
+          }
+
+          .swiper-button-next {
+            background-image: url("../image/icon-arrow-rightt.png");
+            background-size: auto;
+            right: -40px;
+            background-position: 22px center;
+          }
+          .swiper-button-prev {
+            background-image: url("../image/icon-arrow-left.png");
+            background-size: auto;
+            left: -40px;
+            background-position: 45px center;
+          }
+        }
+      }
+
+    }
+  }
+
+
+  @media (max-width: 1300px) {
+    .tabs_panel_content {
+      flex-wrap: wrap;
+      &_right,
+      &_left {
+        width: 100%;
+      }
+      &_right {
+        .slider {
+          box-shadow: none;
+          margin: 0;
+          .swiper-slide {
+            img {
+              width: 100%;
+            }
+          }
+        }
+      }
+      &_left {
+        min-height: 0;
+      }
+    }
+    .tabs_caption {
+      margin: 0 20px;
+      &:last-child {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 1000px) {
+    .tabs_caption {
+      height: 120px;
+      width: 120px;
+      &:nth-last-child(2) {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 767px) {
+    padding: 80px 0;
+    .tabs_captions {
+      flex-wrap: wrap;
+    }
+    .tabs_caption {
+      margin-bottom: 20px;
+    }
+  }
+
+  @media (max-width: 575px) {
+    .tabs {
+      &_panel_content_left {
+        padding: 30px 20px 40px 20px;
+
+        &-title {
+          font-size: 24px;
+        }
+      }
+      &_captions {
+        margin-bottom: 30px;
+      }
+      &_caption {
+        margin: 10px 10px;
+      }
+    }
+
+  }
+
+}
